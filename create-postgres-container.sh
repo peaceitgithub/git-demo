@@ -17,7 +17,7 @@ echo "Waiting for PostgreSQL to start up..."
 sleep 10
 
 # Create a new database and user
-echo "Creating database and user..."
+echo "Creating database and user"
 docker exec -it $CONTAINER_NAME psql -U postgres -c "CREATE DATABASE mydb;"
 docker exec -it $CONTAINER_NAME psql -U postgres -c "CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypassword';"
 docker exec -it $CONTAINER_NAME psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;"
