@@ -1,4 +1,4 @@
-# git-demo
+
 #PostgreSQL Container
 
 #This is a guide to setting up a PostgreSQL container using Docker, based on the #official PostgreSQL image. This container can be used for local development, testing, or as part of a larger application stack.
